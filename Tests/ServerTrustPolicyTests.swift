@@ -208,7 +208,7 @@ class ServerTrustPolicyTestCase: BaseTestCase {
         var result = SecTrustResultType(rawValue: SecTrustResultType.Invalid.rawValue)
         let status = SecTrustEvaluate(trust, &result!)
     #else
-        var result = SecTrustResultType(kSecTrustResultInvalid)
+        var result = SecTrustResultType(SecTrustResultType.Invalid)
         let status = SecTrustEvaluate(trust, &result)
     #endif
 
@@ -217,8 +217,8 @@ class ServerTrustPolicyTestCase: BaseTestCase {
             let unspecified = SecTrustResultType(rawValue: SecTrustResultType.Unspecified.rawValue)
             let proceed = SecTrustResultType(rawValue: SecTrustResultType.Proceed.rawValue)
         #else
-            let unspecified = SecTrustResultType(kSecTrustResultUnspecified)
-            let proceed = SecTrustResultType(kSecTrustResultProceed)
+            let unspecified = SecTrustResultType(SecTrustResultType.Unspecified)
+            let proceed = SecTrustResultType(SecTrustResultType.Proceed)
         #endif
 
             isValid = result == unspecified || result == proceed

@@ -831,9 +831,11 @@
 					};
 					F8111E3219A95C8B0040E7D1 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0800;
 					};
 					F8111E3D19A95C8B0040E7D1 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0800;
 					};
 					F829C6B11A7A94F100A2CD59 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -1664,6 +1666,7 @@
 				4CCB207E1D45563900C64D5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CF627041BA7CB3E0011A099 /* Build configuration list for PBXNativeTarget "Alamofire tvOS" */ = {
 			isa = XCConfigurationList;
